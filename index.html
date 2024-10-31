@@ -3,75 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tax Eligibility Checker</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            width: 300px;
-        }
-        input[type="number"] {
-            width: 80%;
-            padding: 8px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-        #result {
-            margin-top: 15px;
-            font-weight: bold;
-        }
-    </style>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container">
-        <h2>Tax Eligibility Checker</h2>
-        <p>Enter your age:</p>
-        <input type="number" id="ageInput" placeholder="Enter age" min="0">
-        <button onclick="checkEligibility()">Check Eligibility</button>
-        <p id="result"></p>
-    </div>
+    <!-- Header Section -->
+        <header
+        class="bg-primary text-light text-center d-flex align-items-center justify-content-center"
+        style="
+            background-image: url('./Assets/img/misc/4e3405aa-25f0-400b-baa9-e60044c86c6c.jpg');
+            background-size: cover;
+            background-position: cover;
+            height: 50vh;
+        "
+>
+        <div class="container">
+            <h1 class="display-3">Yovies</h1>
+            <p class="lead">Discover our amazing product and services</p>
+        </div>
+    </header>
 
-    <script>
-        function checkEligibility() {
-            const age = document.getElementById('ageInput').value;
-            const result = document.getElementById('result');
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-            if (age === "") {
-                result.textContent = "Please enter a valid age.";
-                result.style.color = "red";
-            } else if (age >= 18) {
-                result.textContent = "You are eligible to pay tax.";
-                result.style.color = "green";
-            } else {
-                result.textContent = "You are not eligible to pay tax.";
-                result.style.color = "blue";
-            }
-        }
-    </script>
+    <!-- Main Content Area -->
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a very good in my craft and excell in bead making </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project One</h3>
+                <p>Description of your first project. Explain what it does and the technologies used.</p>
+            </div>
+            <div class="project">
+                <h3>Project Two</h3>
+                <p>Description of your second project. Include the main features and tech stack.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Bead Making</li>
+                <li>Chief</li>
+                <li>Facinator</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you’d like to connect, feel free to reach out to me at:</p>
+            <p><strong>Email:</strong> yoives@gmail.com</p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Yovies. All rights reserved.</p>
+    </footer>
 </body>
 </html>
